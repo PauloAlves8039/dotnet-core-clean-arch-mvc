@@ -14,8 +14,8 @@ namespace CleanArchMvc.Domain.Interfaces
 
         Task<Product> CreateAsync(Product product);
 
-        Task<Product> UpdateAsync(Category product);
+        Task<Product> UpdateAsync(Product product);
 
-        Task<Product> RemoveAsync(Category product);
+        Task<Product> RemoveAsync(Product product);
     }
 }
