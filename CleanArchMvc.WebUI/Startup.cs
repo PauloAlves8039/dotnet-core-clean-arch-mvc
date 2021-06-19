@@ -1,3 +1,4 @@
+using CleanArchMvc.Domain.Account;
 using CleanArchMvc.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -22,7 +23,7 @@ namespace CleanArchMvc.WebUI
             services.AddControllersWithViews();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ISeedUserRoleInitial seedUserRoleInitial)
         {
             if (env.IsDevelopment())
             {
@@ -38,6 +39,10 @@ namespace CleanArchMvc.WebUI
 
             app.UseRouting();
 
+            seedUserRoleInitial.SeedRoles();
+            seedUserRoleInitial.SeedUsers();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
