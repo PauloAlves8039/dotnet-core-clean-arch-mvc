@@ -6,13 +6,10 @@ Repositório de uma aplicação web para exemplificar o uso de arquitetura em ca
 código fonte do projeto foi baseado no curso [Clean Architecture Essencial - ASP .NET Core com C#](https://www.udemy.com/course/clean-architecture-essencial-asp-net-core-com-c/).
 
 Essa aplicação dispõe de um catálago com funcionalidades para inserir, buscar, atualizar e excluir registros em um relacionamento do tipo 1:N (um para muitos)
-<<<<<<< HEAD
 onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos
 do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementação na base de dados criada com o
-=======
 onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos 
 do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementações na base de dados criada com o 
->>>>>>> 5923bb17e4eea9dad47232390672b5bc5324d09b
 [SQL Server 2019](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads).
 
 Foi implementado recursos para autenticação de usuários na aplicação com o [ASP .NET Core Identity](https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio), onde é possível adicionar novos usuários para realizar seus respectivos acessos através de credenciais.
