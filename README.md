@@ -6,13 +6,18 @@ Repositório de uma aplicação web para exemplificar o uso de arquitetura em ca
 código fonte do projeto foi baseado no curso [Clean Architecture Essencial - ASP .NET Core com C#](https://www.udemy.com/course/clean-architecture-essencial-asp-net-core-com-c/).
 
 Essa aplicação dispõe de um catálago com funcionalidades para inserir, buscar, atualizar e excluir registros em um relacionamento do tipo 1:N (um para muitos)
+<<<<<<< HEAD
 onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos
 do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementação na base de dados criada com o
+=======
+onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos 
+do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementações na base de dados criada com o 
+>>>>>>> 5923bb17e4eea9dad47232390672b5bc5324d09b
 [SQL Server 2019](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads).
 
 Foi implementado recursos para autenticação de usuários na aplicação com o [ASP .NET Core Identity](https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio), onde é possível adicionar novos usuários para realizar seus respectivos acessos através de credenciais.
 
-Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstrap.com/), com o objetivo de aplicar estilos [CSS](https://getbootstrap.com/) para uma melhor experiência do usuário na iteração com os elementos de telas.
+Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstrap.com/), com o objetivo de aplicar estilos [CSS](https://getbootstrap.com/) para uma melhor experiência do usuário na iteração com os elementos de telas na aplicação.
 
 A principio foi realizado testes de unidade com o [XUnit](https://xunit.net/) e [FluentAssertions](https://fluentassertions.com/) para a categoria e produto, 
 que tiveram validações implementadas em suas respectivas classes usando o conceito de domínios ricos e tratamento de exceções.
@@ -56,7 +61,7 @@ em sua tabela ficam disponíveis botões de ações para editar, exibir e exclui
 ## :camera: Lista de Produtos
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-clean-arch-mvc/blob/master/CleanArchMvc.WebUI/wwwroot/images/screenshot3.png" /></p>
-Seguindo a mesma premissa da tela de categorias aqui é exibida uma lista de produtos em uma tebela, tendo botões disponíveis com as mesmas ações para manipulação de registros.
+Seguindo a mesma premissa da tela de categorias aqui é exibida uma lista de produtos em uma tabela, tendo botões disponíveis com as mesmas ações para manipulação de registros.
 
 ## Author
 
