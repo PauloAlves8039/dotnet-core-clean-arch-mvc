@@ -5,18 +5,17 @@
 Repositório de uma aplicação web para exemplificar o uso de arquitetura em camadas utilizando conceitos do [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html),
 código fonte do projeto foi baseado no curso [Clean Architecture Essencial - ASP .NET Core com C#](https://www.udemy.com/course/clean-architecture-essencial-asp-net-core-com-c/).
 
-Essa aplicação dispõe de um catálago com funcionalidades para inserir, buscar, atualizar e excluir registros em um relacionamento do tipo 1:N (um para muitos)
-onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos
-do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementação na base de dados criada com o
-onde uma categoria possui vários produtos, mas um produto só pertence a uma categoria, usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos 
-do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementações na base de dados criada com o 
+Essa aplicação dispõe de um catálago com funcionalidades para  `inserir`, `buscar`, `atualizar` e `excluir` registros em um relacionamento do tipo `1:N` (um para muitos)
+onde uma `Categoria` possui vários `Produtos`, mas um `Produto` só pertence a uma  `Categoria`.
+
+Usando o [Entity Framework Core](https://docs.microsoft.com/pt-br/ef/core/) e os recursos do [Code First Migrations](https://docs.microsoft.com/pt-br/ef/ef6/modeling/code-first/migrations/) foram realizadas essas implementações na base de dados criada com o 
 [SQL Server 2019](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads).
 
-Foi implementado recursos para autenticação de usuários na aplicação com o [ASP .NET Core Identity](https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio), onde é possível adicionar novos usuários para realizar seus respectivos acessos através de credenciais.
+Foram implementados recursos para `Autenticação` e `Autorização` de usuários na aplicação com o [ASP .NET Core Identity](https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio), onde é possível adicionar novos usuários para realizar seus respectivos acessos através de credenciais.
 
-Em todas as Views foram utilizados componentes do [Bootstrap](https://getbootstrap.com/), com o objetivo de aplicar estilos [CSS](https://getbootstrap.com/) para uma melhor experiência do usuário na iteração com os elementos de telas na aplicação.
+Em todas as `Views` foram utilizados componentes do [Bootstrap](https://getbootstrap.com/), com o objetivo de aplicar estilos [CSS](https://getbootstrap.com/) para uma melhor experiência do usuário na iteração com os elementos de telas na aplicação.
 
-A principio foi realizado testes de unidade com o [XUnit](https://xunit.net/) e [FluentAssertions](https://fluentassertions.com/) para a categoria e produto, 
+A principio foram realizados testes de unidade com o [XUnit](https://xunit.net/) e [FluentAssertions](https://fluentassertions.com/) para as entidades `Categoria` e  `Produtos`, 
 que tiveram validações implementadas em suas respectivas classes usando o conceito de domínios ricos e tratamento de exceções.
 
 ## :wrench: Recursos Utilizados
@@ -39,26 +38,23 @@ que tiveram validações implementadas em suas respectivas classes usando o conc
 - Abra a pasta `dotnet-core-clean-arch-mvc` no prompt de comando.
 - Execute `dotnet restore` para restaurar as dependências e ferramentas do projeto.
 
-## :camera: Diagrama do Banco de Dados
+## :camera: Screenshots
+
+### Diagrama do Banco de Dados
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-clean-arch-mvc/blob/master/CleanArchMvc.WebUI/wwwroot/images/diagrama.png" /></p>
-Diagrama gerado no Microsoft SQL Server Management Studio, o seu objetivo é exibir a estrutura da base de dados criada no projeto.
 
-## :camera: Tela de Login
+### Login
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-clean-arch-mvc/blob/master/CleanArchMvc.WebUI/wwwroot/images/screenshot1.png" /></p>
-Responsável pela autenticação dos usuários, nessa implementação foram utilziados recursos do ASP .NET Core Identity
 
-## :camera: Lista de Categorias
+### Lista de Categorias
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-clean-arch-mvc/blob/master/CleanArchMvc.WebUI/wwwroot/images/screenshot2.png" /></p>
-Como resultado nessa tela é exibida uma lista com as categorias cadastradas, podendo ter acesso a uma outra tela para adicionar uma nova categoria, 
-em sua tabela ficam disponíveis botões de ações para editar, exibir e excluir registros.
 
-## :camera: Lista de Produtos
+### Lista de Produtos
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/dotnet-core-clean-arch-mvc/blob/master/CleanArchMvc.WebUI/wwwroot/images/screenshot3.png" /></p>
-Seguindo a mesma premissa da tela de categorias aqui é exibida uma lista de produtos em uma tabela, tendo botões disponíveis com as mesmas ações para manipulação de registros.
 
 ## Author
 
